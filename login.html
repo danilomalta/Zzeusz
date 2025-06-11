@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Zzeus - Login</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+    <div class="menu-hamburger"><i class="bx bx-menu"></i></div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="toggle"><span class="moon">🌙</span><span class="sun">☀️</span></div>
+        <img src="../assets/logo.png" alt="Zzeus Logo" class="logo" />
+        <div class="login-container">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form class="login-form">
+                    <div class="input-box">
+                        <input type="email" required />
+                        <label>E-mail</label>
+                        <i class="bx bxs-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required />
+                        <label>Senha</label>
+                        <i class="bx bxs-lock-alt"></i>
+                    </div>
+                    <button type="submit" class="btn">Entrar</button>
+                    <div class="linkTxt">
+                        <p><a href="#">Esqueceu a senha?</a></p>
+                        <p>Não tem conta? <a href="#" class="nav-link" data-page="cadastro">Cadastre-se</a></p>
+                    </div>
+                    <div class="social-login">
+                        <button class="social-btn"><i class="bx bxl-google"></i> Login com Google</button>
+                        <button class="social-btn"><i class="bx bxl-facebook"></i> Login com Facebook</button>
+                        <button class="social-btn"><i class="bx bxl-linkedin"></i> Login com LinkedIn</button>
+                        <button class="social-btn"><i class="bx bxl-instagram"></i> Login com Instagram</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/tema.js"></script>
+    <script src="../components/menuLateral.js"></script>
+</body>
+</html>

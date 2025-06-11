@@ -1,0 +1,1 @@
+// Este componente está incluso dentro de js/tema.js. Nenhuma lógica adicional é necessária aqui.

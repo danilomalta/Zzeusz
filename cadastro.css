@@ -1,0 +1,65 @@
+
+.company-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.company-card {
+    padding: 15px;
+    background: var(--container-dark);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+body.light .company-card {
+    background: var(--white);
+    color: var(--text-light);
+}
+
+.company-card:hover {
+    background: var(--gradient-start);
+    color: var(--white);
+}
+
+.company-form, .payment-form {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.company-form.active, .payment-form.active {
+    display: block;
+    opacity: 1;
+}
+
+.plan-options, .counter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.plan-option, .counter-option {
+    padding: 15px;
+    border: 1px solid var(--border-dark);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+body.light .plan-option, body.light .counter-option {
+    border-color: var(--text-light);
+    color: var(--text-light);
+}
+
+.plan-option:hover, .counter-option:hover {
+    background: var(--gradient-start);
+    color: var(--white);
+    border-color: var(--gradient-start);
+}

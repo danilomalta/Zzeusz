@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zzeus - Configuração Inicial</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/global.css"/>
+  <link rel="stylesheet" href="../css/configuracao.css"/>
+</head>
+<body>
+  <div class="menu-hamburger"><i class="bx bx-menu"></i></div>
+  <div class="sidebar">
+    <ul>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Ajuda</a></li>
+      <li><a href="#">Termos de Uso</a></li>
+    </ul>
+  </div>
+  <div class="wrapper">
+    <div class="toggle"><span class="moon">🌙</span><span class="sun">☀️</span></div>
+    <img src="../assets/logo.png" alt="Zzeus Logo" class="logo" />
+    <div class="form-box">
+      <h2>Configuração Inicial</h2>
+      <div class="tab-nav">
+        <button class="active" data-step="step1">Importação</button>
+        <button data-step="step2">Modo de Operação</button>
+        <button data-step="step3">Personalização</button>
+      </div>
+      <div id="step1" class="setup-step active">
+        <h3>Importação de Produtos</h3>
+        <p>Bem-vindo ao Zzeus!</p>
+        <div class="input-box">
+          <select required>
+            <option disabled selected>Selecione</option>
+            <option value="auto">Detecção Automática</option>
+            <option value="sqlite">SQLite</option>
+            <option value="firebird">Firebird</option>
+            <option value="csv">CSV</option>
+            <option value="xml">XML</option>
+            <option value="json">JSON</option>
+          </select>
+          <label>Importar de Outro Sistema</label>
+        </div>
+        <div class="input-box">
+          <input type="file" accept=".csv" />
+          <label>Importar por Arquivo CSV</label>
+        </div>
+        <button class="btn" data-next="step2">Não Quero Importar</button>
+      </div>
+      <div id="step2" class="setup-step">
+        <h3>Modo de Operação</h3>
+        <p>Escolha o modo:</p>
+        <div class="plan-options">
+          <div class="plan-option">Local (HD Interno)</div>
+          <div class="plan-option">Servidor Interno</div>
+          <div class="plan-option">Nuvem</div>
+          <div class="plan-option">Híbrido</div>
+        </div>
+        <button class="btn" data-next="step3">Continuar</button>
+      </div>
+      <div id="step3" class="setup-step">
+        <h3>Personalização</h3>
+        <div class="input-box">
+          <input type="text" required />
+          <label>Nome da Empresa</label>
+        </div>
+        <div class="input-box">
+          <input type="file" accept="image/*" />
+          <label>Logo</label>
+        </div>
+        <div class="input-box">
+          <select required>
+            <option disabled selected>Selecione</option>
+            <option value="blue">Azul</option>
+            <option value="purple">Roxo</option>
+            <option value="green">Verde</option>
+          </select>
+          <label>Cor Predominante</label>
+        </div>
+        <div class="input-box">
+          <select required>
+            <option value="light">Claro</option>
+            <option value="dark">Escuro</option>
+          </select>
+          <label>Modo</label>
+        </div>
+        <div class="input-box">
+          <input type="text" required />
+          <label>Região, Idioma, Moeda</label>
+        </div>
+        <button class="btn" data-next="finish">Concluir</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/configuracao.js"></script>
+  <script src="../js/tema.js"></script>
+  <script src="../components/menuLateral.js"></script>
+</body>
+</html>
